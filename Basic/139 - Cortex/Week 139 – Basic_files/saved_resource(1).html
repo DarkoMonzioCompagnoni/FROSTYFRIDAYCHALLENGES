@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://wordpress.com/widgets/3rd-party-cookie-check/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head><body>
+<iframe src="./saved_resource.html"></iframe>
+<script>
+	const iframe = document.querySelector( 'iframe' );
+	if ( window.parent ) {
+		window.addEventListener( 'message', function ( event ) {
+			if ( 'https://public-api.wordpress.com' !== event.origin || event.source !== iframe.contentWindow ) {
+				return;
+			}
+			if ( 'cookie-auth-ok' === event.data ) {
+				window.parent.postMessage( 'WPCOM:3PC:allowed', '*' );
+			} else if ( 'cookie-auth-missing' === event.data ) {
+				window.parent.postMessage( 'WPCOM:3PC:blocked', '*' );
+			}
+		} );
+	}
+</script>
+
+</body></html>

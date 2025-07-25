@@ -1,0 +1,592 @@
+/** PPOM CSS **/
+
+.wpcomment-wrapper {
+  padding: 0 !important;
+  clear: both;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.wpcomment-wrapper span.show_description {
+  font-size: 11px;
+  color: #999;
+  padding-left: 5px;
+}
+
+.wpcomment-wrapper span.show_required {
+  color: red;
+}
+
+/** https://wordpress.org/support/topic/multiple-css-change-requests/ **/
+
+/*.wpcomment-wrapper textarea{
+  height: inherit !important;
+  min-height: inherit !important;
+  min-width: inherit !important;
+}*/
+
+/** hiding prices for related products **/
+
+.related.products .amount-options {
+  display: none;
+}
+
+/** hiding prices for upsell products **/
+
+.upsells .amount-options {
+  display: none;
+}
+
+/** price container **/
+
+#wpcomment-price-container {}
+
+#wpcomment-price-container ul li {
+  list-style: none;
+  line-height: 4px;
+}
+
+/*#wpcomment-price-container {
+  text-align: center;
+  background: #00DD88;
+  background: -moz-linear-gradient(center top , #00DD88 0%, #00CC00 100%) repeat scroll 0 0 transparent;
+  border-radius: 15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);  
+  margin: 5px 0 10px 15px;
+  position: absolute;
+  right: -580px;
+  width: 350px;
+  min-height: 50px;
+  display: none;
+  z-index: 100;
+}*/
+
+#wpcomment-price-cloner-wrapper {
+  display: none;
+}
+
+/** Ends price container **/
+
+/** ========= palettes input design ========== **/
+
+.wpcomment-palettes label>input {
+  visibility: hidden;
+  position: absolute;
+}
+
+.wpcomment-single-palette {
+  margin: 2px;
+}
+
+.wpcomment-palettes label>input+.wpcomment-single-palette {
+  cursor: pointer;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  float: left;
+  border: 2px solid transparent;
+  position: relative;
+  color: #c73c3c;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+}
+
+.wpcomment-palettes label>input:checked+.wpcomment-single-palette {
+  border: 2px solid #000;
+  margin-right: 10px;
+}
+
+.wpcomment-palettes .amount {
+  position: absolute;
+  /*background-color: rgba(0,0,0,0.5);*/
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  width: 100%;
+}
+
+.wpcomment-single-palette:hover {
+  -moz-box-shadow: 0px 0px 5px white;
+  -webkit-box-shadow: 0px 0px 5px white;
+  box-shadow: 0px 0px 8px white;
+  z-index: 999;
+}
+
+/** ========= Ends palettes ============*/
+
+/** ========= Image upload =============*/
+
+.wpcomment_upload_image_box {
+  /*border: 1px dashed;
+  background: #eee;
+  text-align: center;*/
+}
+
+.wpcomment_upload_image_box .pre_upload_image {
+  /*width: 100px;
+height: 100px;*/
+  overflow: hidden;
+  float: left;
+  text-align: center;
+  background-color: #FFF;
+  margin: 5px;
+  cursor: pointer;
+  position: relative;
+  max-width: 100px;
+}
+
+.wpcomment_upload_image_box .input_image {
+  /*position: absolute;*/
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.p_u_i_name {
+  background-color: #E0DFDF;
+  overflow: hidden;
+  margin: 0 auto;
+  font-size: 13px;
+  padding: 5px;
+}
+
+.nm-imagetools .fa {
+  color: black;
+}
+
+/** ======== audio/video ======== **/
+
+.wpcomment_audio_box .wpcomment_audio {
+  text-align: center;
+}
+
+/** ========== File ========== **/
+
+.wpcomment-file-container {
+  background-color: #ccc;
+  padding: 25px;
+}
+
+.modal-body {
+  position: relative;
+  overflow-y: auto;
+  max-height: 400px;
+  padding: 15px;
+}
+
+.wpcomment-dragdrop-text {
+  display: block;
+  font-style: italic;
+}
+
+.wpcomment-file-cb {
+  display: none !important
+}
+
+/** ========= Ends Image upload =============*/
+
+/** ========== prices handler ==============**/
+
+.wpcomment-option-price-list li>span:first-child {
+  padding: 10px;
+  float: left;
+  clear: both;
+}
+
+.wpcomment-option-price-list li>span:last-child {
+  padding: 10px;
+  float: right;
+}
+
+/** ==== variation quantity === */
+
+.wpcomment-wrapper table td {
+  text-align: center !important;
+}
+
+/** ========= PPOM Conditional Fields =========== */
+
+.wpcomment-c-hide{
+  display:none;
+}
+
+.wpcomment-c-show{
+  display:block;
+}
+
+/*div[class^="wpcomment-locked-"],*/
+/*div[class*=" wpcomment-locked-"] {*/
+/*  display: none;*/
+/*}*/
+
+/** =========== Bulkquantity =============== */
+
+#wpcomment-input-bulkquantity input[type=range] {
+  -webkit-appearance: none;
+  margin-top: 0.5rem;
+  width: 100%;
+  border: none !important;
+  background: transparent;
+  padding: 0;
+}
+
+#wpcomment-input-bulkquantity input[type=range]:focus {
+  outline: none;
+}
+
+#wpcomment-input-bulkquantity input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 0.3rem;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #eee;
+  border-radius: 5px;
+}
+
+#wpcomment-input-bulkquantity input[type=range]::-webkit-slider-thumb {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  background: #0275d8;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -0.35rem;
+}
+
+#wpcomment-input-bulkquantity input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 0.3rem;
+  cursor: pointer;
+  animate: 0.2s;
+  background: #eee;
+  border-radius: 5px 10px;
+}
+
+#wpcomment-input-bulkquantity input[type=range]::-moz-range-thumb {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  background: #0275d8;
+  cursor: pointer;
+}
+
+#wpcomment-input-bulkquantity input[type=range]::-ms-track {
+  width: 100%;
+  height: 0.9rem;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  color: transparent;
+}
+
+#wpcomment-input-bulkquantity input[type=range]::-ms-fill-lower {
+  background: #e1e1e1;
+  border-radius: 10px 5px;
+}
+
+#wpcomment-input-bulkquantity input[type=range]::-ms-fill-upper {
+  background: #eee;
+  border-radius: 10px;
+}
+
+#wpcomment-input-bulkquantity input[type=range]::-ms-thumb {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 0.5rem;
+  background: #0275d8;
+  cursor: pointer;
+}
+
+#wpcomment-input-bulkquantity input[type=range]:focus::-ms-fill-lower {
+  background: #eee;
+
+}
+
+#wpcomment-input-bulkquantity datalist {
+  display: flex;
+  justify-content: space-between;
+  height: 6px;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
+#wpcomment-input-bulkquantity datalist option::before {
+  content: '';
+  display: block;
+  width: 0;
+  border-right: 1px solid #DDD;
+  height: 10px;
+  padding-left: 3px;
+  text-indent: 0;
+}
+
+/* ========== Croppie ========== */
+
+.wpcomment-croppie-btn {
+  display: none;
+}
+
+/* ========== Pre Images style ========== */
+
+.nm-boxes-outer{
+  display:flex;
+}
+
+/*.nm-boxes-outer .pre_upload_image {*/
+/*  float: left;*/
+/*  margin-right: 5px;*/
+/*  position: relative;*/
+/*}*/
+
+.wpcomment-image-overlay{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  opacity: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.pre_upload_image:hover{
+  opacity: .7;
+}
+
+.pre_upload_image:hover .wpcomment-image-overlay{
+  opacity: 1;
+  background-image: url('share.png');
+}
+
+.wpcomment-popup-body.images{
+  text-align: center;
+}
+
+.nm-boxes-outer input[type=radio],
+.nm-boxes-outer input[type=checkbox] {
+  display: none !important;
+}
+
+.nm-boxes-outer input+img {
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.nm-boxes-outer input:checked+img {
+  border: 2px solid #f00;
+}
+
+.wpcomment-col {
+  padding: 0 5px!important;
+}
+
+/* pricematrix */
+
+.wpcomment-slider-container {
+  margin: 10px auto;
+}
+
+.wpcomment-pricematrix-range {
+  clear: both;
+  border-bottom: 1px #ccc dashed;
+}
+
+#wpcommentSlider,
+.wpcomment-range-bs-slider {
+  width: 100%;
+}
+
+#wpcommentSlider .slider-selection {
+  background: #81bfde;
+}
+
+.wpcomment-delete-option-table {
+  color: red;
+  cursor: pointer;
+}
+
+/*
+    2- Helper Icon With Desciption CSS
+*/
+
+#wpcomment_tooltip {
+  font-family: Ubuntu, sans-serif;
+  font-size: 0.875em;
+  text-align: center;
+  text-shadow: 0 1px rgba( 0, 0, 0, .5);
+  line-height: 1.5;
+  color: #fff;
+  background: -webkit-linear-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+  background: -moz-linear-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+  background: -ms-radial-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+  background: -o-linear-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+  background: linear-gradient( top, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.88));
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border-top: 1px solid #fff;
+  -webkit-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3);
+  -moz-box-shadow: 0 3px 5px rgba( 0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba( 0, 0, 0, .3);
+  position: absolute;
+  z-index: 10024;
+  padding: 15px;
+  overflow: visible;
+
+}
+
+#wpcomment_tooltip:after {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #333;
+  border-top-color: rgba( 0, 0, 0, .7);
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  margin-left: -10px;
+}
+
+#wpcomment_tooltip.top:after {
+  border-top-color: transparent;
+  border-bottom: 10px solid #333;
+  border-bottom-color: rgba( 0, 0, 0, .6);
+  top: -20px;
+  bottom: auto;
+}
+
+#wpcomment_tooltip.left:after {
+  left: 10px;
+  margin: 0;
+}
+
+#wpcomment_tooltip.right:after {
+  right: 10px;
+  left: auto;
+  margin: 0;
+}
+
+/*variation quantity grid view css*/
+
+.wpcomment-quantity-box-cols {
+  padding: 0px 0px 6px 0px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  line-height: 15px;
+  font-size: 11px;
+}
+
+.wpcomment-quantity-qty-section input {
+  width: 20px;
+}
+
+.wpcomment-quantity-price-wrap {
+  display: block;
+  margin-top: -10px;
+}
+
+/** Hiding select options for variable products **/
+
+/*option.wpcomment-variable-option{
+  display: none;
+}*/
+
+/* Iris color-picker **/
+
+.iris-picker .iris-square {
+  margin-right: 8% !important;
+}
+
+/*====== Elementor Issue CSS ========*/
+
+.woocommerce div.product.elementor form.cart.variations_form .woocommerce-variation-add-to-cart {
+  display: block !important;
+}
+
+.elementor-add-to-cart form.cart {
+  display: block !important;
+}
+
+/** ========= files uploaded filelist ======== */
+
+.wpcomment-wrapper div.filelist {
+  display: flex;
+}
+
+div.filelist .u_i_c_box {
+  flex: 1;
+}
+
+.wpcomment-option-notice {
+  color: red;
+  padding: 5px;
+  font-size: 17px;
+  text-align: center;
+}
+
+.wpcomment-option-notice p {
+  margin: 0 !important;
+}
+
+.nm-horizontal-layout .wpcomment-instock,
+.wpcomment-quantities-grid .wpcomment-instock {
+  display: block;
+}
+
+#powerTip {
+  white-space: inherit !important;
+  /*left: auto!important;*/
+}
+
+.wpcomment-wrapper .wpcomment-tooltip {
+  cursor: help;
+}
+
+@media only screen and (max-width: 600px) {
+  #powerTip {
+    /*width: 200px !important;*/
+  }
+}
+
+.woocommerce-js .wpcomment-flex-controller{
+  display: block !important;
+}
+
+/*Nicenumber =/- css*/
+.wpcomment-number-plusminus {
+  display: inline-flex;
+  justify-content: stretch;
+}
+
+.wpcomment-number-plusminus input {
+  vertical-align: middle;
+  -moz-appearance: textfield !important;
+  box-sizing: content-box;
+  margin: 0;
+  text-align: center;
+}
+
+.wpcomment-number-plusminus input::-webkit-inner-spin-button,
+.wpcomment-number-plusminus input::-webkit-outer-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+.wpcomment-ul{
+  padding:0;
+}
+
+.wpcomment-li{
+  list-style:none;
+}
+
+.wpcomment-file-wrapper{
+  text-align:center;
+}
+
+.wpcomment-heading{
+  font-weight: 600;
+  font-size:20px;
+}
